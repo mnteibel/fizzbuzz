@@ -1,0 +1,42 @@
+<html>
+	<head>
+
+	<title>FizzBuzz</title>
+	
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	</head>
+	
+	<body>
+		
+		<div>Numbers</div>
+		<div id="number"></div>
+
+	</body>
+
+	<script>
+		for(var i = 1; i < 100; i++){
+			if (i % 3 === 0 && i % 5 === 0){
+				$("#number").append(("<div> fizzbuzz </div>"));
+			}
+
+			else if(i % 3 === 0){
+				$("#number").append(("<div> buzz </div>"));
+			}
+
+			else if (i % 5 === 0){
+				$("#number").append(("<div> fizz </div>"));
+			}
+
+			else if(i % 3 === 0){
+				$("#number").append(("<div> buzz </div>"));
+			}
+
+			else{
+				$("#number").append("<div>" + i + "</div>");
+			}
+		}
+
+	</script>
+
+</html>
